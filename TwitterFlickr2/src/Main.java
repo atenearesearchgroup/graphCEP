@@ -6,5 +6,4 @@ public class Main {
 		main.main(args);
 
 	}
-
 }
