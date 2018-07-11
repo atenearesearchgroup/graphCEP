@@ -24,6 +24,18 @@ Note that our artifacts use Maven to build dependencies on them. Sometimes, when
 
 Some of our artifacts have two projects: a Scala project and a Java project. The first one contains the source code and the second one is an auxiliary project that allows to export a jar file.
 
+## Scala version
+
+Some of our projects have been built with Scala version 2.11. It is necessary to check if the Scala Library Container within Scala project has proper version when you import the project. If not follow these steps:
+
+- Right click on scala project and click on 'Properties'.
+- Select 'Scala Compiler' on the left menu.
+- Select 'Use Project Settings' checkbox.
+- Select 'Latest 2.11 bundle (dynamic)' on 'Scala installation' option.
+- Click on 'Apply and Close'.
+- Update maven dependencies as we explain above.
+
+
 # 1. Motorbike4Esper Project
 
 Motorbike example with Esper technology.
